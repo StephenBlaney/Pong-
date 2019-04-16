@@ -31,3 +31,24 @@ while True:
 ![Part1](https://user-images.githubusercontent.com/22968181/56204551-a5a87e80-603f-11e9-988c-5736b73985a6.PNG)
 
 
+# Part 2: Creating our paddles and ball
+Moving on we need to create our pong paddles along with the ball. We do this by creating a Turtle object that will represent these items along with their respective attributes. The following is how we create our turtle objects.
+
+```Paddle_a = turtle.Turtle()```
+
+NOTE: Watch the capitalisation. Capital T as that is the class name.
+
+We set the speed of our object to 0 which is the possible speed available otherwise this game would run very slow. The colour and shape of the paddle is set to white and square respectively, like the original game. We then lift our turtle pen; we do this cause by definition turtle objects draw the objects as they are moving across the screen. ``` 
+paddle_a.penup()```. Now we want our turtle to draw our paddle at a certain part of the screen being the left, we set the turtle_a to( -350, 0).
+
+Now you may have notice when we run the program, we have a square on the left, but the original game has more of a rectangular shape. Here we need to use the ``` turtle.shapesize()```  method in order to stretch the width. The original square is 20 x 20 so we multiply by 5 to give 100 and that will be our final rectangle shape.
+
+Now we have our first paddle done we essentially do the same thing again except make a few changes I’d recommend copy the code and make the necessary changes which I will go through now. The only change is that we need to set the goto to plus 350 as we are setting this object to the right and of course change the name of our turtle object.
+
+Creating our ball is very similar to our paddles copy the paddle code block and rename it ball. We want to get rid of the stretch as we want the ball to be its original size and we need to set its position to the centre of the screen which of course is 0,0 
+
+
+
+
+
+
