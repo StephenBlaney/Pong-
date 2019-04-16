@@ -122,7 +122,40 @@ Now we have our ball moving to the upper right, next we need to do some boarder 
 
 It’s the same process for the bottom screen.
 
-Now it’s time to do the walls on the x axis which is very similar to the y walls except this time when the ball surpasses the paddle, we want to set the position of the ball to the centre (0, 0). 
+Now it’s time to do the walls on the x axis which is very similar to the y walls except this time when the ball surpasses the paddle, we want to set the position of the ball to the centre (0, 0).
+
+```python
+
+# Ball  movement parameters
+ball.dx = 2
+ball.dy = -2
+
+
+while True:
+    wn.update()
+
+    # To actually move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+    # Border checking
+
+    if ball.ycor() > 290:
+        ball.sety(290)
+        ball.dy *= -1
+
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        ball.dy *= -1
+
+    if ball.xcor() > 390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+
+    if ball.xcor() < -390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+```
 
 
 
