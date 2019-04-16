@@ -46,7 +46,7 @@ Now you may have notice when we run the program, we have a square on the left, b
 Now we have our first paddle done we essentially do the same thing again except make a few changes I’d recommend copy the code and make the necessary changes which I will go through now. The only change is that we need to set the goto to plus 350 as we are setting this object to the right and of course change the name of our turtle object.
 
 Creating our ball is very similar to our paddles copy the paddle code block and rename it ball. We want to get rid of the stretch as we want the ball to be its original size and we need to set its position to the centre of the screen which of course is 0,0
-``` 
+```python 
 # Paddle A
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)  # fastest possible speed
