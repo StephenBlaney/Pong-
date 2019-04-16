@@ -156,6 +156,8 @@ while True:
         ball.goto(0, 0)
         ball.dx *= -1
 ```
+![Part4](https://user-images.githubusercontent.com/22968181/56220116-cbde1680-605f-11e9-8e01-119858c96a67.PNG)
+
 
 
 
