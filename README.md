@@ -27,6 +27,6 @@ wn.setup(width=800, height=600)
 while True:
     wn.update()```
     
-![](\Users\Stephen\Documents\Pong\Part1.png) 
+![Part1](https://user-images.githubusercontent.com/22968181/56204551-a5a87e80-603f-11e9-988c-5736b73985a6.PNG)
 
 
