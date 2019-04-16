@@ -84,8 +84,38 @@ Now we have our function defined except it’s not being use, for our program to
 
 ``` Wn.listen```  this line listen for keyboard input and ``` onKeypress()```  says when the w key is pressed call the ``` paddle_a_up```  method which in turn runs the code within it and there moves the paddle 20 pixels up.
 
-Now we have our left paddle going up, so what we can do is copy that method and use it for the paddle going down except this time we set new y cord as -20 and we also need to create a key binding for that as well. Now we have the full controls working for the left paddle. Repeat for the right paddle.  
+Now we have our left paddle going up, so what we can do is copy that method and use it for the paddle going down except this time we set new y cord as -20 and we also need to create a key binding for that as well. Now we have the full controls working for the left paddle. Repeat for the right paddle.
+```python 
+# Moving our paddles
 
+def paddle_a_up():
+     y = paddle_a.ycor()
+     y += 20
+     paddle_a.sety(y)
+
+def paddle_a_down():
+    y = paddle_a.ycor()
+    y -= 20
+    paddle_a.sety(y)
+
+def paddle_b_up():
+    y = paddle_b.ycor()
+    y += 20
+    paddle_b.sety(y)
+
+def paddle_b_down():
+    y = paddle_b.ycor()
+    y -= 20
+    paddle_b.sety(y)
+
+# Keyboard Bindings
+wn.listen()
+wn.onkeypress(paddle_a_up, "w")
+wn.onkeypress(paddle_a_down, "s")
+
+wn.onkeypress(paddle_b_up, "Up")
+wn.onkeypress(paddle_b_down, "Down")
+``` 
 
 
 
