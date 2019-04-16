@@ -9,7 +9,7 @@ The program will be developed using the turtle module. It’s a great little mod
 
 First thing we need to do I create our screen turtle object Note: that screen is capitalised. We than give our window a title.  We will also set the background our window to black. Next, we want to change the size of our screen to be 600 x 800.
 
-Now the next line wn.tracer(0) actually prevents the window from updating meaning we have to manually update it. We do this in order to speed up out games.
+Now the next line wn.tracer(0) actually prevents the window from updating meaning we have to manually update it. We do this in order to speed up out games.```wn.tracer```
 
 The main game loop is going to be where all the main activity of our game will be taking place. We create a while loop and when it’s true (which it always is meaning it’s guaranteed to run) do the following actions. We start this by telling the window to update. 
 Now would be a good time to run the program and what you should have is a simple black screen 800 x 600 as specified. The coordinates at the centre is 0,0 +300 is the top and -300 is the bottom +400 and -400 is right and left respectively it’s important to remember this numbers for later. 
