@@ -50,6 +50,15 @@ Creating our ball is very similar to our paddles copy the paddle code block and 
 
 ![Part2](https://user-images.githubusercontent.com/22968181/56209021-6df30400-604a-11e9-8f14-d68f510564ac.PNG)
 
+# Step 3: Moving the Paddles.
+
+We will be creating our first function of our program here, we will need this to control our paddles up and down. First things first we need to define our function ``` def paddle_a_up():```  Now, we need to get the current Y Coordinate of paddle_a  ``` y  = paddle_a.ycor()``` . Ycor is from the turtle module and what it does is returns the y coordinates and we are assigning it to a variable called y. Note: Functions/ Methods in python must have four whitespaces after the function is defined otherwise you will get an indentation error. In order for this to move we need to get the current y coordinate and add by 20 pixels. This does not create the movement however, we need to set the paddle as the current version of the y coordinate (y + 20)
+
+Now we have our function defined except it’s not being use, for our program to use our function we need to bind it to something we call keyboard binning’s. This is essentially having one of our keyboard keys activate or function to move our paddle. 
+
+``` Wn.listen```  this line listen for keyboard input and ``` onKeypress()```  says when the w key is pressed call the ``` paddle_a_up```  method which in turn runs the code within it and there moves the paddle 20 pixels up.
+
+Now we have our left paddle going up, so what we can do is copy that method and use it for the paddle going down except this time we set new y cord as -20 and we also need to create a key binding for that as well. Now we have the full controls working for the left paddle. Repeat for the right paddle.  
 
 
 
