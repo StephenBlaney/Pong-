@@ -14,7 +14,8 @@ Now the next line ```wn.tracer(0)``` actually prevents the window from updating 
 The main game loop is going to be where all the main activity of our game will be taking place. We create a while loop and when it’s true (which it always is meaning it’s guaranteed to run) do the following actions. We start this by telling the window to update. 
 Now would be a good time to run the program and what you should have is a simple black screen 800 x 600 as specified. The coordinates at the centre is 0,0 +300 is the top and -300 is the bottom +400 and -400 is right and left respectively it’s important to remember this numbers for later.
 
-```import turtle
+```python
+import turtle
 
 wn = turtle.Screen() #screen object
 wn.title("Pong by Stephen Blaney")
