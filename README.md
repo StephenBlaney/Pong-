@@ -27,6 +27,6 @@ wn.setup(width=800, height=600)
 while True:
     wn.update()```
     
-![]C:\Users\Stephen\Documents\Pong\Part1.png 
+![](\Users\Stephen\Documents\Pong\Part1.png) 
 
 
