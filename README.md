@@ -184,5 +184,23 @@ The way we are going to do this is that we’ll be drawing the score on to the u
  
 Now we need to create two variables that will contain our score which will be  set to 0 to start. We than need to go to the part of our code that tells us what happens when the ball reaches beyond the paddles. We simply increment our score by 1 when the ball surpasses the paddle and then update our screen. Note: It’s important to use ```pen.clear()``` to ensure the you are not drawing over the previous score. Run it to test and you have a well running game. Congratulations
 
+```python
+score_a = 0
+score_b = 0
 
+ if ball.xcor() > 390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+        score_a += 100
+        pen.clear()
+        pen.write("Player A: {} Player B: {} ".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+
+    if ball.xcor() < -390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+        score_b += 100
+        pen.clear()
+        pen.write("Player A: {} Player B: {} ".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        
+```
 
