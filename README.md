@@ -177,4 +177,12 @@ Now we have to get the ball to bounce off of the paddles. Now if you recall our 
         ball.dx *= -1
 ```
 
+# Part 6: Scoring
+The way we are going to do this is that we’ll be drawing the score on to the upper centre of the screen we will be doing this using turtle. So, what we are going to do, is we are going to create a pen which is a simple turtle object like our ball and paddles. ```pen = turtle.Turtle()```. We set our animation speed of our object and a colour. We then lift our pen, so we don’t have a line leading up to the upper part of our screen as turtles default position is always (0,0) then we hide after it’s done because we don’t want to see it after it’s done it’s job. We finally tell our pen to head to the x and y cors that we want it to draw this cause being our score. You may have to play around with the numbers. Then all we have to do next us to use the write method to get our required text, it’s font and alignment.
+
+ ```pen.write(“Player A:  0  Player B: 0”, align = “center”, font=(“Courier”, 24,”normal”))```
+ 
+Now we need to create two variables that will contain our score which will be  set to 0 to start. We than need to go to the part of our code that tells us what happens when the ball reaches beyond the paddles. We simply increment our score by 1 when the ball surpasses the paddle and then update our screen. Note: It’s important to use ```pen.clear()``` to ensure the you are not drawing over the previous score. Run it to test and you have a well running game. Congratulations
+
+
 
