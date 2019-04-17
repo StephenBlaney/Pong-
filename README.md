@@ -1,5 +1,5 @@
 # Pong
-Pong is one of the earliest arcade video games. It is a table tennis sports game featuring simple two-dimensional graphics. The game was originally manufactured by Atari, which released it in 1972.
+Pong is one of the earliest arcade video games. It is a table tennis sports game featuring simple two-dimensional graphics. The game was originally manufactured by Atari, which released it in 1972. Pong was the first commercially successful video game, which helped to establish the video game industry along with the first home console, the Magnavox Odyssey.
 
 Simple pong in python 3 for beginnings by Stephen Blaney. Note this program is a fun way of teaching the basics of python programming, it does not go in to the details of object-oriented programming or classes. A way of learning while showing your friends your adaption of the biggest game to influence the gaming industry.
 
