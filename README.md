@@ -158,7 +158,23 @@ while True:
 ```
 ![Part4](https://user-images.githubusercontent.com/22968181/56220116-cbde1680-605f-11e9-8e01-119858c96a67.PNG)
 
+# Part 5: Getting the ball to collide with the ball
 
+Now we have to get the ball to bounce off of the paddles. Now if you recall our paddles are 20 pixels wide by 100 pixels long. So, we need to get our ball to bounce when it hit y coordinates that are between the top and bottom of the right side of our paddles. This involves a bit of maths to determine. If the xcor are between 340 and 350 (the top and bottom of a paddle) and the current ycor and y paddle positions plus 40 and the ycor and y paddle positions between -40. This is the pixels along the longer edge of our paddle. After this we set the position of x and reverse the direction.
+    
+ Repeat code for the left paddle while changing our pixel coordinates for x. 
+ 
+ Note: all this code goes within the main loop.
+ 
+```python
+ # Paddle and ball collision
+    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
+        ball.setx(340)
+        ball.dx *= -1
 
+    if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
+        ball.setx(-340)
+        ball.dx *= -1
+```
 
 
