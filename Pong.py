@@ -4,6 +4,7 @@
 # Part 1 : Getting Started
 
 import turtle
+import winsound
 
 wn = turtle.Screen() # screen object
 wn.title("Pong by Stephen Blaney")
@@ -129,11 +130,13 @@ while True:
 
     # Paddle and ball collision
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
+        winsound.PlaySound("bounce", winsound.SND_ASYNC)
         ball.setx(340)
         ball.dx *= -1
 
 
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
         ball.setx(-340)
         ball.dx *= -1
 
