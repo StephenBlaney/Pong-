@@ -203,4 +203,13 @@ score_b = 0
         pen.write("Player A: {} Player B: {} ".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
         
 ```
+# Part 7: Sound.
+To start you’ll need to download the bounce.wav sound file which is available in this repository. Now this is the solution if you are working on a windows operating system you need to import.  winsound and place this line of code in to places the place where the ball hit the paddle. It’s important to have the bounce.wav file in the same directory as your pong.py file
+
+```Winsound.Palysound(“Bounce”, winsound.SND_ASYNC)```
+
+And that’s It’s the program is done the classic Atari Pong Enjoy!!!!
+
+
+
 
